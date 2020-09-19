@@ -1,0 +1,17 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: goods-web
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: 192.168.17.129
+    virtual-host: /
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
